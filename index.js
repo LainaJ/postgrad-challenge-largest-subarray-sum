@@ -5,16 +5,19 @@ let array = [-1, 2, 3]
 
 function largestSubarraySum(array){
     //iterate over array
-    //define temporary sum
     //if current element added to temporary sum would increase temp sum,
         //then update tempsum
-    //if it would decrease it, tempsum will equal the current index
-    //if temp num is higher than max
-        //if yes, then it becomes new MAX sum 
+    //if it would decrease it, tempSum will equal the value at current index(start over a new subarray)
+    //compare tempSum and maxSum
+        //if yes, then it becomes new maxSum 
         //if not, increment to the next one
-    //return tempsum
+    //return maxSum
+    if(!array.length > 0){
+        return 0
+    }
+
     let tempSum = array[0]
-    let maxSum = array[0]
+    let maxSum = 0
     for(let i = 1; i < array.length; i++){
  
         if(tempSum + array[i] > array[i]){
