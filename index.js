@@ -32,18 +32,4 @@ function largestSubarraySum(array){
     }
     return maxSum
 
-    // let max = 0, currentMax = nums[0]
-    // for (let i = 1; i < nums.length; i++) {
-    //     currentMax = Math.max(currentMax + nums[i], nums[i])
-    //     max = Math.max(currentMax, max)
-    // }
-    // return max
 }
-
-
-
-
-//reflection notes
-//something that worked was after psuedocode, I walked through very simple example with the first iteration, and from there I corrected the logic of my loop
-//I did have to clarify/correct that I was returning the sum NOT the subarray
-//knowing why I created maxSum???
